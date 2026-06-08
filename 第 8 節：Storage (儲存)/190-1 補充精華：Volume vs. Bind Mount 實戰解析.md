@@ -12,12 +12,12 @@
 
 ```mermaid
 graph TD
-    subgraph 🐳 容器內部 (Container Layer)
+    subgraph sg_1 ["🐳 容器內部 (Container Layer)"]
         A1[📁 /var/lib/mysql]
         A2[📁 /var/lib/mysql]
     end
 
-    subgraph 🖥️ 宿主機 (Docker Host)
+    subgraph sg_2 ["🖥️ 宿主機 (Docker Host)"]
         B1((🛡️ Volume<br/>由引擎安全託管))
         C1[路徑: /var/lib/docker/volumes/data_volume]
         
